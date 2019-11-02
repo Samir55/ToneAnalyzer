@@ -37,8 +37,11 @@ pip3 install -r requirements.txt
 ```
 
 # Run
-After downloading the dataset and copying it to data/7282_1.csv,
-run this command when you are at the root of the project
+1. Start elasticsearch server
+```console
+elasticsearch
+```
+2. run this command when you are at the root of the project
 
 ```console
 python main.py
