@@ -1,0 +1,4 @@
+pandas
+Flask-API
+ibm-watson>=4.0.1
+elasticsearch
