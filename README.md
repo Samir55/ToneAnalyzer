@@ -11,6 +11,7 @@ API with two endpoints:
     - So the total normalized tones for this hotel is 0.47 angry, 0.45 happy, and 0.62
 sad.
 
+**Note: in the new api, the tones whose scores are less than 0.7 are removed. so I replace all the tones that have no scores with -1**
 ### B. Hotel Tone Analyzer
 - Index all hotels data using ElasticSearch
 - Each hotel is represented as one document. Each review has its tones scores and the whole
@@ -22,7 +23,7 @@ Link: https://www.kaggle.com/datafiniti/hotel-reviews
 **Note** Only 7282_1.csv is downloaded and should be put in data/downloads
 
 # Dependencies
-####ElasticSearch
+#### ElasticSearch
 you can use [This link](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) for how to download. However if you are on a MacOS device you can install using this command
 ```console
 brew install elastic/tap/elasticsearch-full
@@ -44,5 +45,6 @@ python main.py
 
 to access the 2 endpoints
 
-http://127.0.0.1:5000/index/ --> to run indexing
-http://127.0.0.1:5000/tones/hotel_id --> to get the normalized tones scores of the hotel with hotel_id
+http://127.0.0.1:5000/index/ --> to run indexing.   
+http://127.0.0.1:5000/tones/hotel_id --> to get the normalized tones scores of the hotel with hotel_id.   
+
