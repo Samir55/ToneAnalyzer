@@ -2,7 +2,7 @@
 
 API with two endpoints:  
 
-### A. Hotel Indexer
+### A. Hotel Indexer (index/)
 - A service with one endpoint to get the total emotional tones for a hotel, as described in the next step.
 - Calculate the normalized total tones for the hotel using "Watson python lib​".
     - For example, if review #1, for a specific hotel scored 0.25 angry, and 0.80 sad
@@ -12,7 +12,8 @@ API with two endpoints:
 sad.
 
 **Note: in the new api, the tones whose scores are less than 0.7 are removed. so I replace all the tones that have no scores with -1**
-### B. Hotel Tone Analyzer
+
+### B. Hotel Tone Analyzer (tones/hotel_id)
 - Index all hotels data using ElasticSearch
 - Each hotel is represented as one document. Each review has its tones scores and the whole
 hotel has its normalized tones scores.
@@ -20,7 +21,7 @@ hotel has its normalized tones scores.
 # Dataset
 Hotels Review dataset on Kaggle
 Link: https://www.kaggle.com/datafiniti/hotel-reviews  
-**Note** Only 7282_1.csv is downloaded and should be put in data/downloads
+**Note** Only 7282_1.csv is downloaded and put in data/downloads
 
 # Dependencies
 #### ElasticSearch
@@ -35,7 +36,7 @@ Run this command
 pip3 install -r requirements.txt
 ```
 
-### Run
+# Run
 After downloading the dataset and copying it to data/7282_1.csv,
 run this command when you are at the root of the project
 
