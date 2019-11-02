@@ -49,3 +49,6 @@ to access the 2 endpoints
 http://127.0.0.1:5000/index/ --> to run indexing.   
 http://127.0.0.1:5000/tones/hotel_id --> to get the normalized tones scores of the hotel with hotel_id.   
 
+
+Example:
+http://127.0.0.1:5000/tones/0 --> to get the normalized tones score for hotel with id 0
