@@ -22,7 +22,7 @@ Link: https://www.kaggle.com/datafiniti/hotel-reviews
 **Note** Only 7282_1.csv is downloaded and should be put in data/downloads
 
 # Dependencies
-####ElasticSearch
+#### ElasticSearch
 you can use [This link](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) for how to download. However if you are on a MacOS device you can install using this command
 ```console
 brew install elastic/tap/elasticsearch-full
@@ -44,5 +44,5 @@ python main.py
 
 to access the 2 endpoints
 
-http://127.0.0.1:5000/index/ --> to run indexing
-http://127.0.0.1:5000/tones/hotel_id --> to get the normalized tones scores of the hotel with hotel_id
+http://127.0.0.1:5000/index/ --> to run indexing.   
+http://127.0.0.1:5000/tones/hotel_id --> to get the normalized tones scores of the hotel with hotel_id. 
