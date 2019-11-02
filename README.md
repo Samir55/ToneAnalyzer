@@ -44,7 +44,7 @@ elasticsearch
 2. run this command when you are at the root of the project
 
 ```console
-python main.py
+python src/main.py
 ```
 
 to access the 2 endpoints
