@@ -11,7 +11,7 @@ API with two endpoints:
     - So the total normalized tones for this hotel is 0.47 angry, 0.45 happy, and 0.62
 sad.
 
-**Note: in the new api, the tones whose scores are less than 0.7 are removed. so I replace all the tones that have no scores with -1**
+**Note: in the new api, the tones whose scores are less than 0.5 are removed. so I replace all the tones that have no scores with -1**
 
 ### B. Hotel Tone Analyzer (tones/hotel_id)
 - Index all hotels data using ElasticSearch
